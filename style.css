@@ -1,0 +1,99 @@
+
+:root{
+    --primary-color :#37d5d6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+    background-image: url(discord-banner-gif-5.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    background: rgb(78, 3, 112);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card__img{
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    margin: 0px auto;
+    overflow: hidden;
+    transform: translateY(25px);
+    transition: 0.5s;
+}
+
+img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.card__tile{
+    margin-top: 35px;
+    color: white;
+    text-align: center;
+}
+
+.card__tile p{
+    color: var(--primary-color);
+}
+
+.card__social{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card__social a{
+    padding: 0 5px;
+        
+    color: white;
+}
+.card__social a:hover{
+    color: var(--primary-color);
+}
+
+.card button{
+    width: 100px;
+    height: 40px;
+    border:1px solid var(--primary-color);
+    background: transparent;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.card button:hover{
+    background: var(--primary-color);
+}
+
+
+.card__img:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    transform: unset;
+    border:none;
+}
